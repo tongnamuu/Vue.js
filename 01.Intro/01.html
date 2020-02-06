@@ -8,5 +8,25 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <script>
+      var div = document.querySelector("#app");
+      var str = "hello vue.js";
+      div.innerHTML = str;
+
+      var viewModel = {};
+      Object.defineProperty(viewModel, "str", {
+        get: function() {
+          //속성에 접근했을 때의 동작을 정의
+          console.log("접근");
+        },
+        set: function(newValue) {
+          //속성에 값을 할당했을 때의 동작을 정의
+          console.log("할당", newValue);
+          div.innerHTML = newValue;
+        }
+      });
+      console.log("hi");
+    </script>
   </body>
 </html>
