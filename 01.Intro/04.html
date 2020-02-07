@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!--vue의 인스턴스를 el을 통해 html tag와 연결-->
+        <!--아직 data의 message는 어디에 붙을지 알 수 없다-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+       var vm = new Vue({
+           el:'#app',
+           data:{
+               message:'hi'
+           }
+       });
+    </script>
+</body>
+</html>
